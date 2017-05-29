@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import * as actions from './actions'
 
 Vue.use(Vuex)
 
@@ -27,7 +28,7 @@ const mutations = {
 
     DELETE_NOTE (state) {
         state.notes.$remove(state.activeNote)
-        state.activeNote = state.notes[0]
+        state.activeNote = state.notes.length > 0 ? state.notes[0] : {}
     },
 
     TOGGLE_FAVORITE (state) {
@@ -39,10 +40,15 @@ const mutations = {
     }
 }
 
+const getters = {
+    activeNote: state => state.activeNote
+}
 // create the Vuex instance by combining the State and 
 // mutations objects. 
 // then export the Vuex Store for use by the components 
 export default new Vuex.Store({
     state, 
-    mutations
+    mutations, 
+    actions, 
+    getters
 })
