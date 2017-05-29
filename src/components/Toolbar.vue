@@ -1,10 +1,10 @@
 <template>
   <div id="toolbar">
-      <i @click="addNote" className="glyphicon glyphicon-plus"></i>
+      <i @click="addNote" class="glyphicon glyphicon-plus"></i>
       <i @click="toggleFavorite"
-        className="glyphicon glyphicon-star"
+        class="glyphicon glyphicon-star"
         :class="{starred: activeNote.favorite}"></i>
-      <i @click="deleteNote" className="glyphicon glyphicon-remove"></i>
+      <i @click="deleteNote" class="glyphicon glyphicon-remove"></i>
   </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
         }, 
         toggleFavorite() {
             this.$store.dispatch('toggleFavorite')
-        }
+        },
         deleteNote() {
             this.$store.dispatch('deleteNote')
         }
