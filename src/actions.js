@@ -2,8 +2,8 @@ export const addNote = ({ commit }) => {
     commit('ADD_NOTE')
 }
 
-export const editNote = ({ commit }, e) => {
-    commit('EDIT_NOTE', e.target.value)
+export const editNote = ({ commit }, text) => {
+    commit('EDIT_NOTE', text)
 }
 
 export const deleteNote = ({ commit }) => {
