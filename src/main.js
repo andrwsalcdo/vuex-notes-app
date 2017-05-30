@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import store from './store'
 import App from './components/App.vue'
-import router from './router'
+
 
 Vue.config.productionTip = false
 
@@ -11,7 +11,6 @@ Vue.config.productionTip = false
 new Vue({
   store, // inject store to all children 
   el: '#app',
-  router,
-  template: '<App/>',
+  template: '<app />', 
   components: { App }
 })

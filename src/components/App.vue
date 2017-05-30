@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Toolbar from './Toolbar.vue'
+import Toolbar from './Toolbar'
 import  NotesList from './NotesList'
 import Editor from './Editor'
 

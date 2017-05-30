@@ -1,6 +1,15 @@
 # vuex-notes-app
 
-> A Vue.js project
+A Vuex and Vue2 note taking app. This tutorial by coligo.io [Learn Vuex by Building a Notes App]('https://coligo.io/learn-vuex-by-building-notes-app/')
+helped significantly along the way. However this tutorial was made with vue and vuex 1, so I had to migrate most of the logic to Vue and Vuex 2. This made for a more enjoyable & challenging learning experience. 
+
+![ demo gif ](demo.gif)
+
+Features 
+- Add and delete notes 
+- favorite notes 
+- toggle between all and favorite notes 
+
 
 ## Build Setup
 

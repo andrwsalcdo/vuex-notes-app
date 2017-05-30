@@ -1,10 +1,7 @@
-//does only 2 things: 
-// grabs the currently activeNote from the store and displays it in a <textarea>
-// calls the editNote() action whenever the user updates the note
 <template>
   <div id="note-editor">
-    <textarea
-        :value="activeNoteText"
+    <textarea 
+        :value="activeNoteText" 
         @input="editNote"
         class="form-control">
     </textarea>
@@ -12,6 +9,7 @@
 </template>
 
 <script>
+
 
 export default {
     computed: {
